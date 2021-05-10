@@ -8,7 +8,7 @@ $('#mobile_menu').on('click', function(){
     list = 0;
   }
 });
-function window_width() {
+$(window).resize(function(){
   if ($(window).width() <= '800'){
     $('.menu-left').css('width', '80%');
     $('.menu-right').css('width', '20%');
@@ -23,5 +23,4 @@ function window_width() {
     $('.option').css('display', 'flex');
     $('.mobile_menu-button').css('display', 'none');
   }
-}
-let timer = setInterval(() => window_width(), 100);
+});
