@@ -1,4 +1,4 @@
-body{
+﻿body{
   margin: 0;
   padding: 0;
 }
@@ -76,7 +76,7 @@ body{
 .mobile_menu-button{
   width: 5em;
   height: 3em;
-  border: 0.7em double white;
+  border: 0.6em double white;
   display: flex;
   justify-content: center;
   align-items: center;

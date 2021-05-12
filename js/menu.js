@@ -8,8 +8,8 @@ $('#mobile_menu').on('click', function(){
     list = 0;
   }
 });
-$(window).resize(function(){
-  if ($(window).width() <= '800'){
+function window_update(){
+  if ($(window).width() <= '1200'){
     $('.menu-left').css('width', '80%');
     $('.menu-right').css('width', '20%');
     $('.menu-block').css('height', '4.3em');
@@ -23,4 +23,8 @@ $(window).resize(function(){
     $('.option').css('display', 'flex');
     $('.mobile_menu-button').css('display', 'none');
   }
+}
+$(window).resize(function(){
+    window_update();
 });
+window_update();
